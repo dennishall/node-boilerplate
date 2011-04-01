@@ -3,10 +3,6 @@
 echo "Updating git submodules"
 git submodule update --init --recursive
 
-echo "Creating static folders"
-mkdir ./static/images
-mkdir ./static/css
-
 echo "Copying Markup and CSS BoilerPlate..."
 cp ./lib/html5-boilerplate/404.html ./views/404.ejs
 cp ./lib/html5-boilerplate/js/plugins.js ./static/js/plugins.js
@@ -22,5 +18,5 @@ rm README.md
 echo "Initing the new git project..."
 git init
 git add .
-git commit -m"Initial Commit"
+git commit -m "Initial Commit"
 

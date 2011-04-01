@@ -54,6 +54,7 @@
   <script>window.jQuery || document.write("<script src='/js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
 
   <!-- "your" javascript goes here -->
+  <script>SOCKET_IO_PORT = <%= port %>;</script>
   <script src="/js/socket.io.js"></script>
   <script src="/js/plugins.js?v=1"></script>
   <script src="/js/script.js?v=1"></script>
@@ -64,10 +65,9 @@
     <script>DD_belatedPNG.fix("img,.png_bg");</script>
   <![endif]-->
 
-  <!-- yui profiler and profileviewer - remove for production -->
+  <!-- yui profiler and profileviewer - uncomment if you want to use it
   <script src="/js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="/js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
+  <script src="/js/profiling/config.js?v=1"></script> -->
 
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
